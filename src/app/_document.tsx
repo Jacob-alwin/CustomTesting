@@ -1,3 +1,10 @@
+// create next document 
+
+
+// Path: customisation_test\src\app\page.tsx
+// Compare this snippet from customisation_test\src\app\layout.tsx:
+"use client";
+
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -17,14 +24,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <script src="https://unpkg.com/konva@9.2.0/konva.min.js"></script> */}
-      {/* <Script
-        src="https://unpkg.com/konva@9.2.0/konva.min.js"
-        strategy="beforeInteractive"
-      /> */}
-
+   
       <body className={inter.className}>{children}</body>
-      <Script src="./konva.js" strategy="beforeInteractive" />
     </html>
   );
 }
